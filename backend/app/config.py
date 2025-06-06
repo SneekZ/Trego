@@ -18,6 +18,8 @@ COOKIE_SETTINGS = {
 }
 
 from app.handlers.oauth import routerOauth
+from app.handlers.data import routerData
 
 app.include_router(routerOauth, prefix="", tags=["User"])
+app.include_router(routerData, prefix="", tags=["Data"])
 
